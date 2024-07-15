@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+        <style>
+        .logi{
+            background-image: url("background.jpg");
+            width: 100%;
+            height: 900px;
+        }
+        .logi1{
+            width: 300px;
+            height: 350px;
+            border:3px solid wheat;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -50%;
+            background-color: white;
+           
+        }
+        </style>
+    </head>
+    <body>
+<div class="logi">
+
+</div>
+<div class="logi1">
+    <h1 style="text-align: center;">Login Form</h1>
+    <form style="font-size: 15px; margin-left: 20px;">
+        <p><b>Email</b></p>
+        <input type="email" name="email" placeholder="mail@gmail.com">
+        <br><br>
+        <p><b>Password</b></p>
+        <input name="password" type="password" placeholder="enter password">
+        <br><br><br>
+        <button type="submit">Submit</button>
+        <br><br>
+        <p>If you not registered then <a href="signup.html">Sign up</a></p>
+    </form>
+</div>
+    </body>
+</html>
