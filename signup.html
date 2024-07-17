@@ -28,7 +28,7 @@
 </div>
 <div class="regis">
     <h1 style="text-align: center;">Sign up</h1>
-    <form style="font-size: 15px; margin-left: 20px;">
+    <form  id="form1"  style="font-size: 15px; margin-left: 20px;"  method="post">
         <p><b>First Name</b></p>
         <input type="text" name="first name" placeholder="Enter first name">
         <br><br>
@@ -41,10 +41,25 @@
         <p><b>Password</b></p>
         <input name="password" type="password" placeholder="Enter password">
         <br><br><br>
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="validate()">Submit</button>
         <br><br>
         <p>If you already registered then <a href="login.html">Login</a></p>
     </form>
 </div>
+<script>
+    function validate()
+    {
+        let x=document.forms["form1"]["first name"];
+    let y=document.forms["form1"]["last name"];
+    let z=document.forms["form1"]["email"];
+    let w=document.forms["form1"]["password"];
+
+    if(x==" "|| y==" " || z==" " || w==" ")
+    {
+        alert("Please fill all information");
+    }
+    return false;
+    }
+</script>
     </body>
 </html>
